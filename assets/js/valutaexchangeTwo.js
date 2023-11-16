@@ -38,10 +38,32 @@ function showResult(myEuroResult, myDollarResult, myDanishAmount) {
 
 }
 
-/* skriv din kode herunder.
+// skriv din kode herunder. 
+// Funktion en Dele en
 
 
+function makeExchange(myEuroRate, myDollarRate, myDanishAmount) {
 
+    let myDollars = calculateExchange(myDanishAmount, myDollarRate);
+    let myEuros = calculateExchange(myDanishAmount, myEuroRate);
+
+    showResult(myEuros, myDollars, myDanishAmount);
+}
+
+
+// Funktion en Dele to
+
+function calculateExchange(test1, test2) { // vi har en funktion navnet calculateExchange med to værdier
+
+    let ExchangeAmount = test1 * test2; // vi gange vores værdiger 
+    return ExchangeAmount; // vi sender resulter tilbag
+ }
+    let AmounDKK = 100;  // værdig danske kroner
+    let test2 = 1.3;  //rate
+    let ExchangeAmount = calculateExchange(AmounDKK); 
+
+
+// funktion to
 
 
 

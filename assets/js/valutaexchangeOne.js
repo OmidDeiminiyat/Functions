@@ -43,7 +43,6 @@ function makeExchange(myEuroRate, myDollarRate, myDanishAmount) {
 
 
 
-
 // viser resultatet  (view code fra MVC)
 function showResult(myEuroResult, myDollarResult, myDanishAmount) {
     const resultElement = document.getElementById('result');
@@ -57,4 +56,13 @@ function showResult(myEuroResult, myDollarResult, myDanishAmount) {
 
 //  funktion der returnerer en veksel udregning skal skrives her
 
+
+function calculateExchange(DKK, Rate) { // vi har en funktion navnet calculateExchange med to værdier
+
+   let ExchangeAmount = DKK * Rate; // vi gange vores værdiger 
+   return ExchangeAmount; // vi sender resulter tilbag
+}
+   let AmounDKK = 100;  // værdig danske kroner
+   let Rate = 1.3;  //rate
+   let ExchangeAmount = calculateExchange(AmounDKK , Rate); 
 
